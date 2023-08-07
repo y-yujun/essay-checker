@@ -1,0 +1,25 @@
+textarea, input[type="text"] {
+    font-size: 14px;
+    line-height: 24px;
+    border: 5px solid #a67b5b;
+    border-radius: 5px;
+    font-family: Menlo, monospace, 'Courier New', Courier;
+    margin-bottom: 10px;
+}
+input[type="submit"] {
+    padding: 12px 0;
+    color: #fff;
+    background-color: #a67b5b;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+h2 {
+    font-family: Menlo, 'Courier New', Courier, monospace;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: bold;
+    color: #202123;
+    margin: 16px 0 40px;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+  <title>Essay Checker</title>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='essay.png') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+
+<body>
+  <!-- <img src="{{ url_for('static', filename='essay.png') }}" class="icon" width="250" height="200"/> -->
+  <h2>Essay Checker</h2>
+  <form action="/" method="post">
+    <input type="text" name="grade" placeholder="e.g. Year 10, Form 5, Cambridge C1" size="50"/> <br>
+    <textarea type="text" name="prompt" id="prompt" placeholder="Enter the prompt or title of an essay" rows="3" cols="100"></textarea> <br>
+    <textarea type="text" name="essay" id="essay" placeholder="Enter your essay" rows="20" cols="100"></textarea> <br>
+    <input type="submit" value="Check your essay" />
+  </form>
+  {% if result %}
+  <div class="result">{{ result }}</div>
+  {% endif %}
+</body>
